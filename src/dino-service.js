@@ -1,7 +1,7 @@
-export class WeatherService {
-  async getWeatherByCity(city) {
+export class DinoService {
+  async getDinoIpsum(input1, input2) {
     try {
-      let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`);
+      let response = await fetch(`http://dinoipsum.herokuapp.com/api/?format=json&paragraphs=${input1}&words=${input2}`);
       let jsonifiedResponse = await response.json();
       return jsonifiedResponse;
     } catch(error) {
