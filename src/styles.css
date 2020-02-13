@@ -22,10 +22,20 @@ body {
     cursor: pointer;
     display: inline-block;
     border-radius: 25px;
+    background-image: linear-gradient(to right, rgb(94, 221, 189) 0%, rgb(4, 80, 180) 51%, rgb(0, 45, 104) 100%)
 }
 .gradient-button:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     margin: 8px 10px 12px;
+    background-position: right center;
 }
-.gradient-button {background-image: linear-gradient(to right, rgb(94, 221, 189) 0%, rgb(4, 80, 180) 51%, rgb(0, 45, 104) 100%)}
-.gradient-button:hover { background-position: right center; }
+
+div.jumbotron {
+    display: none;
+    width: 600px;
+    word-wrap: break-word;
+    position: relative;
+    text-align: center;
+    height:100%;
+    width:100%;
+}

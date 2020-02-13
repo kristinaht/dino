@@ -21,6 +21,7 @@ $(document).ready(function() {
 
     function getElements(response) {
       $('.showDinos').text(`${response}`);
+      $('.showDinos').show();
     }
 
   });
